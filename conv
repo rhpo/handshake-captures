@@ -1,0 +1,9 @@
+
+OUTDIR="./hashcat"
+mkdir $OUTDIR 2>/dev/null
+
+for file in *.cap; do
+        hcxpcapngtool -o "$OUTDIR/$file.hc22000" "$file"
+done
+
+
